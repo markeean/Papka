@@ -16,6 +16,9 @@ from aiogram.types import ReplyKeyboardRemove, \
 from aiogram.types import InlineKeyboardButton,InlineKeyboardMarkup,CallbackQuery
 from aiogram.utils.callback_data import CallbackData
 import text_1
+
+
+
 TOKEN = '5442548683:AAEFOLHw6zehWzMD8qTk8c9EEkWb-aUrP6o'
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot=bot)
@@ -75,7 +78,7 @@ async def back(message: types.Message):
 fugas_b = KeyboardButton('На пелюстку')
 oskolk_b = KeyboardButton('На циліндр')
 tank_b = KeyboardButton('Вона велика і кругла')
-other_b = KeyboardButton('Інше')
+other_b = KeyboardButton('Інше шось')
 mines_kb = ReplyKeyboardMarkup(resize_keyboard=True,one_time_keyboard=True)
 mines_kb.add(fugas_b,oskolk_b,tank_b,other_b)
 ########клавіатура для надання першої допомоги##########
